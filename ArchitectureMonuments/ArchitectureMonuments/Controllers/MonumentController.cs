@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Linq;
 
 namespace ArchitectureMonuments.Controllers
 {
@@ -11,20 +10,23 @@ namespace ArchitectureMonuments.Controllers
     {
         // GET: Monument
         private Models.MonumentDBEntities db= new Models.MonumentDBEntities();
-        
         public ActionResult Index()
         {
             var all_items = db.Monuments.ToList<ArchitectureMonuments.Models.Monument>();
             var aall_items = all_items.OrderByDescending(x => x.likes).ToList<ArchitectureMonuments.Models.Monument>();
             List<ArchitectureMonuments.Models.Monument> items = new List<Models.Monument>();
-            for(int i=0;i<6;i++)
+            for (int i = 0; i < 3; i++)
             {
                 items.Add(aall_items[i]);
             }
             return View(items);
         }
 
-
+        public ActionResult MonumentView()
+        {
+            var items = db.Monuments;
+            return View(items);
+        }
 
         public ActionResult Details(int id)
         {

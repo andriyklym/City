@@ -2,27 +2,29 @@
 <head>
     <link rel="stylesheet" href="~/Content/bootstrap.min.css">
     <script src="~/Scripts/bootstrap.min.js"></script>
- </head>
+</head>
 <div class="modal-content">
-    <div class="modal-header">
+    
+    <div class="modal-header" >
         <button class="close" data-dismiss="modal" area-hidden="true">X</button>
         <h4>@Model.name</h4>
     </div>
-    <div class="modal-body">
-        
-            <img src="@Model.main_photo_path" width="570" height="400" /><br /><br />
-        @Model.description
-        <br />
-        <br />
-        Adress: @Model.adress<br />
-        <br />
-        @{ 
-            string[] images = Model.sub_photo_path.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        }
-        @foreach(var i in images)
-        {
-            <img src="@i" width="570" height="400" /> <br />
-        }
+        <div class="modal-body">
 
+            <img src="@Model.main_photo_path" width="570" height="400" /><br /><br />
+            @Model.description
+            <br />
+            <br />
+            Adress: @Model.adress<br />
+            <br />
+            @{
+                string[] images = Model.sub_photo_path.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            }
+            @foreach (var i in images)
+            {
+                <img src="@i" width="570" height="400" /> <br />
+            }
+
+       
     </div>
 </div>
