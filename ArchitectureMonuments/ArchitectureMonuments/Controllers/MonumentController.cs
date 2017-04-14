@@ -37,5 +37,7 @@ namespace ArchitectureMonuments.Controllers
                 return PartialView(c);
             return HttpNotFound();
         }
+
+       
     }
 }

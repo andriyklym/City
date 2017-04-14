@@ -1,30 +1,44 @@
 ﻿@model ArchitectureMonuments.Models.Monument
-<head>
-    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
-    <script src="~/Scripts/bootstrap.min.js"></script>
-</head>
+
+
 <div class="modal-content">
     
-    <div class="modal-header" >
-        <button class="close" data-dismiss="modal" area-hidden="true">X</button>
-        <h4>@Model.name</h4>
+    <div class="modal-header">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="monument-name">@Model.name</div>
+            </div>
+            <div class="col-md-3 col-md-offset-2">
+                <div class="adress-line">Адреса: <br />@Model.adress 
+ 
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="like-line"><img  src="~/Content/img/like.svg" alt="like" width="30" height="30"><span class="numoflikes-line">@Model.likes</span></div>
+            </div>
+        </div>
     </div>
+    
         <div class="modal-body">
-
-            <img src="@Model.main_photo_path" width="570" height="400" /><br /><br />
-            @Model.description
-            <br />
-            <br />
-            Adress: @Model.adress<br />
-            <br />
-            @{
+            
+                <div class="row">
+                    <div class="col-md-7">
+                        <img class="main-photo" src="@Model.main_photo_path" />
+                    </div>
+                    <div class="col-md-5 ">
+                        <div class="description-line">@Model.description</div>
+                    </div>
+            </div>
+           
+            
+           <!-- @{
                 string[] images = Model.sub_photo_path.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             }
             @foreach (var i in images)
             {
                 <img src="@i" width="570" height="400" /> <br />
             }
-
+            -->
        
     </div>
 </div>

@@ -104,6 +104,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\details.css" />
     <Content Include="Content\css\monuments.css" />
     <Content Include="Content\img\1circle.png" />
     <Content Include="Content\img\1circle.svg" />
@@ -135,6 +136,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\fonts\RobotoRegular\RobotoRegular.eot" />
+    <Content Include="Content\fonts\RobotoRegular\RobotoRegular.ttf" />
+    <Content Include="Content\fonts\RobotoRegular\RobotoRegular.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

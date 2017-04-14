@@ -23,7 +23,7 @@ body {
     font-family: RobotoRegular;
     font-style: normal;
     font-weight: 400;
-    src: url(fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"),url(fonts/RobotoRegular/RobotoRegular.woff) format("woff"),url(fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")
+    src: url(../fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoRegular/RobotoRegular.woff) format("woff"),url(../fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")
 }
 
 body {
@@ -111,10 +111,7 @@ nav li {
     width-text-decoration: none;
 }
 
-.rectangles 
-{
-    display: inline-block;
-}
+
 
 .circlee1, .like, .name, .opis {
     display: block
