@@ -68,6 +68,7 @@ nav li {
 .main-menu > ul > li > a {
     display: block;
     padding: 15px 15px 15px 20px;
+    
     margin: 40px;
     font-size: 25px;
     line-height: 40px;
@@ -139,6 +140,8 @@ nav li {
     }
 
 .opis {
+    width: 260px;
+    height: 100px;
     margin: 5px
 }
 

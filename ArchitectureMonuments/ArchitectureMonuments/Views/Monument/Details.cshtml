@@ -1,6 +1,7 @@
 ﻿@model ArchitectureMonuments.Models.Monument
 
-
+<!--<div class="main-photo" style="background:url(@Model.main_photo_path)"><</div>-->
+<img class="main-photo" src="@Model.main_photo_path" />
 <div class="modal-content">
     
     <div class="modal-header">
@@ -23,11 +24,17 @@
             
                 <div class="row">
                     <div class="col-md-7">
-                        <img class="main-photo" src="@Model.main_photo_path" />
+                        <div class="description-line">@Model.description</div>
+                        <div class="map"></div>
                     </div>
                     <div class="col-md-5 ">
-                        <div class="description-line">@Model.description</div>
+                        <div class="comments">
+                            
+
+                        </div>
                     </div>
+                   
+                    <
             </div>
            
             
