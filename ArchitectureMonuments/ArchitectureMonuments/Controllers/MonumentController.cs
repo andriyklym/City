@@ -4,8 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
+
 namespace ArchitectureMonuments.Controllers
 {
+
+   
+
     public class MonumentController : Controller
     {
         // GET: Monument
@@ -37,6 +42,13 @@ namespace ArchitectureMonuments.Controllers
                 return PartialView(c);
             return HttpNotFound();
         }
+
+
+
        
+
+
+
+
     }
 }
